@@ -6,7 +6,9 @@ $bannedUsers = [
     2003 => "Inappropriate behavior",
     3005 => "Violating terms of service",
     4007 => "Repeated offenses",
-    5009 => "Harassment"
+    5009 => "Harassment",
+    6011 => "Moderator warn",
+    7013 => "Unethical use"
 ];
 
 // Check if the request method is POST
