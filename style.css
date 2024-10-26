@@ -1,15 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap");
-
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Lexend", sans-serif;
 }
 
 body {
+    background: linear-gradient(45deg, #020024 0%, #090979 50%, #054b9c 100%) no-repeat;
     min-height: 100vh;
-    background: url("res/bg.jpg") no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -20,28 +17,39 @@ body {
     left: 0;
     width: 100%;
     padding: 20px 100px;
-    background: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index: 100;
 }
 
-.logo{
+.logo {
     font-size: 32px;
     color: #fff;
     text-decoration: none;
     font-weight: 700;
+}
+
+.logoImg {
+    max-width: 40px;
+    max-height: 40px;
+    margin-left: 20px;
+    rotate: 45deg;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     user-select: none;
 }
 
 .navbar a {
     position: relative;
-    font-size: 18px;
+    font-size: 20px;
     color: #fff;
-    font-weight: 500;
     text-decoration: none;
-    margin-left: 40px;
+    font-weight: 500;
+    margin-left: 60px;
     user-select: none;
 }
 
@@ -58,33 +66,4 @@ body {
 
 .navbar a:hover::before {
     width: 100%;
-}
-
-.main {
-    position: relative;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 70px 10% 0;
-    user-select: none;
-}
-
-.main-content h3 {
-    font-size: 48px;
-    font-weight: 700;
-}
-
-.main-content h1 {
-    font-size: 44px;
-    font-weight: 300;
-}
-
-.main-content h1 span {
-    color: darkblue;
-}
-
-body {
-    color: #fff;
 }
